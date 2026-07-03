@@ -1,0 +1,26 @@
+extends layout
+
+block main-content 
+  .main-content 
+    h2 Update Product 
+    form(action=`/products/update/${product._id}` method="POST")
+        label Name 
+        input(type="text" name="name" required value=product.name)
+        br
+        label Description  
+        input(type="text" name="description" value=product.description)
+        br
+        label Price  
+        input(type="number" name="price" required value=product.price)
+        br
+        label Size  
+        input(type="text" name="size" value=product.size)
+        br
+        label Category  
+        input(type="text" name="category" value=product.category)
+        br
+        label Image URL  
+        input(type="text" name="image" value=product.image)
+        br
+        br
+        button(type="submit") ADD Product 

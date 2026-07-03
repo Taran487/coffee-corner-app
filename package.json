@@ -1,0 +1,22 @@
+{
+  "name": "coffee-shop-admin",
+  "version": "1.0.0",
+  "description": "coffee shop admin dashboard built with node.js, express, mongoDB and PUG",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon ./index.js",
+    "ui": "browser-sync start --config bs-config.js"
+  },
+  "author": "Taranpreet Kaur",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "express": "^4.22.1",
+    "mongoose": "^9.7.3",
+    "pug": "^3.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

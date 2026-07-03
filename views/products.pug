@@ -1,0 +1,27 @@
+extends layout
+
+block main-content
+
+    section.hero 
+        h2 
+            a(href="products/add") Add Product
+    
+    section.products
+        .products-container
+            each product in products 
+                .product
+                    img(
+                        src=product.image, 
+                        alt=product.name,
+                        width="300"
+                    )
+                    
+                    h3 #{product.name} 
+                    p 
+                        | Price: $#{product.price}
+                    p Category:  #{product.category} 
+                    .actions
+                        a.update-link(href=`/products/update/${product._id}`) Update
+                        a.delete-link(href=`/products/delete/${product._id}`) Delete
+
+            

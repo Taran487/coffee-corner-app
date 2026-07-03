@@ -1,0 +1,21 @@
+extends layout
+
+block main-content 
+  .main-content 
+    h2
+      a(href="categories/add") Add Category  
+      br
+      br
+      table.table-border 
+        thead 
+          tr 
+            th Name 
+            th Description   
+            th Actions 
+        tbody 
+          each category in categories  
+            tr 
+              td #{category.name}
+              td #{category.description}
+              td 
+                a.delete-link(href=`/categories/delete/${category._id}`) Delete 

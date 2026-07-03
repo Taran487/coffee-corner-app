@@ -1,0 +1,17 @@
+block variables 
+doctype html 
+html 
+  head
+    meta(charset="utf-8")
+    title Coffee Corner Admin 
+    block scripts 
+      link(rel="stylesheet", type="text/css", href="/styles.css")
+  body
+    header 
+      .header-content   
+        h1#site-name 
+          a(href="/") Coffee Corner  
+    main#main 
+      block main-content 
+    footer#footer 
+      p &copy; Copyright Taranpreet Kaur, 2026.
