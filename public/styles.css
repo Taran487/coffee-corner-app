@@ -9,7 +9,7 @@ main{
   flex: 1;
 }
  header{
-  background-color: #38220f;
+  background-color: #2C1D1A;
   color: white;
   padding: 20px;
   text-align: center;
@@ -28,18 +28,21 @@ header h1{
   margin: 0 10px;
 }
 #site-name a:hover{
-  color: #DCAEAE;
+  color: #eb791b;
 }
-
+a{
+  text-decoration: none;
+  color: #0056b3;
+}
 /*Hero section*/
 .hero {
-  background-color: #ffecdc;
+  background-color: #F2EFE9;
   text-align: center;
   padding: 50px 20px;
 }
 h2{
   text-align: center;
-  color: #fc9239;
+  color: #f17713;
 }
 .hero h2 {
   font-size: 2rem;
@@ -59,7 +62,7 @@ h2{
 
 .products h2 {
   text-align: center;
-  color: #1b5e20;
+  color: #A14F34;
   margin-bottom: 30px;
 }
 
@@ -136,7 +139,7 @@ h2{
     transition: color 0.3s;
 }
 .update-link {
-    color: #2e7d32;
+    color:#4A6741;
 }
 .update-link:hover {
     color: #1b5e20;
@@ -149,7 +152,7 @@ h2{
 }
 /*Footer*/
 footer {
-  background-color: #38220f;
+  background-color: #2C1D1A;
   color: white;
   text-align: center;
   padding: 15px;
