@@ -34,26 +34,14 @@ a{
   text-decoration: none;
   color: #0056b3;
 }
-/*Hero section*/
-.hero {
-  background-color: #F2EFE9;
-  text-align: center;
-  padding: 50px 20px;
-}
+
 h2{
   text-align: center;
   color: #f17713;
 }
-.hero h2 {
-  font-size: 2rem;
-  color: #1b5e20;
-}
 
-.hero p {
-  max-width: 700px;
-  margin: auto;
-  font-size: 1.1rem;
-}
+
+
 
 /*Product section*/
 .products {
@@ -137,29 +125,7 @@ button:hover{
   margin: 0 15px 15px;
 }
 
-/*About Us */
-.about-section {
-  padding: 40px 20px;
-  text-align: center;
-}
 
-.about-section h2 {
-  color: #1b5e20;
-}
-
-.about-section img {
-  width: 100%;
-  max-width: 900px;
-  border-radius: 10px;
-  margin: 20px 0;
-}
-
-.about-section ul{
-  list-style-type: square;
-  text-align: left;
-  display: inline-block;
-  margin-top: 10px;
-}
 .actions {
     padding: 15px;
     display: flex;
@@ -189,7 +155,6 @@ footer {
   color: white;
   text-align: center;
   padding: 15px;
-  /* margin-top: 30px; */
 }
 .table-border{
   width: 100%;
