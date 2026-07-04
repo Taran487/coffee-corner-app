@@ -28,9 +28,9 @@ app.get("/",async(request, response) => {
 
 //PRODUCTS PAGE fetches all the products and display them on the Product Page
 app.get("/products",async(request, response) => { 
-  let productList = await db.getProducts();
+  let productList = await db.getProducts(); // The getProduct() function is called defined inside db.js and fetch products array and assign all data here in variable productList. 
   console.log(productList);
-  response.render("products",{ products: productList});
+  response.render("products",{ products: productList}); // Object containing KEY: products means variables used inside product.pug file and VALUE:productList actual data that just fetched using db.getProducts()
 });
 
 // ADD PRODUCT PAGE shows a form to add new product 
@@ -40,7 +40,7 @@ app.get("/products/add",(request, response)=>{
 // SAVE the data of Submitted form in the database
 app.post("/products/add", async(request, response)=>{
   await db.addProduct({
-    name: request.body.name,
+    name: request.body.name, // Takes what we type in name field in form
     description: request.body.description,
     price: request.body.price,
     size: request.body.size,
@@ -70,7 +70,7 @@ app.post("/products/update/:id", async(request, response)=>{
 
 //DELETE PRODUCT  this will delete the product by ID and redirect to products page
 app.get("/products/delete/:id", async (request, response) => {
-  await db.deleteProduct(request.params.id);
+  await db.deleteProduct(request.params.id); // (request.params.id) request.params is an object it will take the id and gives to delete function
   response.redirect("/products");
 });
 
