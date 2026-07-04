@@ -73,7 +73,40 @@ h2{
   max-width: 1200px;
   margin: 0 auto;
 }
-
+.product-form{
+  max-width: 500px;
+  margin:20px auto;
+  padding:20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+.form-items{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.form-items label{
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #38220f;
+}
+.form-items input{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1 rem;
+}
+button{
+  width: 100%;
+  padding:12px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+button:hover{
+  background-color: #1b5e20;
+}
 /*Product card*/
 .product {
   background-color: white;

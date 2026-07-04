@@ -3,12 +3,11 @@ extends layout
 block main-content 
   .main-content 
     h2 Add New Category  
-    form(action="/categories/add" method="POST")
+    form(action="/categories/add" method="POST" class="product-form")
+      .form-items
         label Name 
         input(type="text" name="name" required)
-        br
+      .form-items
         label Description  
         input(type="text" name="description")
-        br
-        br
-        button(type="submit") ADD Category  
+      button(type="submit") ADD Category  
