@@ -1,11 +1,13 @@
 import "dotenv/config"; // Environment variable from .env file
 import express from "express";
+import cors from "cors";
 import path from "path";
 import db from "./components/db.js"; //load db.js
 
 const __dirname = import.meta.dirname; 
 
 const app = express(); //set up the Express app
+app.use(cors());
 
 const port = process.env.PORT || "8888";
 
